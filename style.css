@@ -171,6 +171,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 9999;
 }
 
 header.home {
@@ -350,6 +351,9 @@ input[type="ckeckbox"] {
     color: var(--light);
     font-size: 150%;
     opacity: 0;
+    margin: 0;
+    width: 80%;
+    text-align: center;
 }
 
 .gallery-grid figure img,
@@ -358,7 +362,7 @@ input[type="ckeckbox"] {
 }
 
 .gallery-grid figure:hover img{
-    opacity: 0.5;
+    opacity: 0.3;
     scale: 1.1;
 }
 
@@ -466,6 +470,18 @@ input[type="ckeckbox"] {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: relative;
+}
+
+.tour-section figure::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 75%, rgba(0, 0, 0, 0.5));
+  z-index: 1;
 }
 
 .tour-section figure p,
@@ -474,6 +490,7 @@ input[type="ckeckbox"] {
     left: 10px;
     bottom: 10px;
     color: var(--light);
+    z-index: 2;
 }
 
 .tour-section figure h3 {
@@ -502,6 +519,13 @@ input[type="ckeckbox"] {
     color: var(--highlight);
     display: flex;
     justify-content: space-between;
+}
+
+.tour-distance {
+  color: var(--dark);
+  font-size: 110%;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .tour-info input {
@@ -574,6 +598,16 @@ footer p {
   color: var(--light);
   opacity: 0.5;
   text-align: center;
+}
+
+footer .citation {
+  opacity: 1;
+}
+
+footer .citation a {
+  text-decoration: none;
+  border: none;
+  color: var(--highlight);
 }
 
 /* CUSTOM GRIDS ============================================================================= */
