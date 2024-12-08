@@ -252,7 +252,7 @@ input[type="submit"] {
 input[type="submit"] {
   background-color: var(--highlight);
   border: 1px solid var(--highlight);
-  color: #fff;
+  color: var(--dark) !important;
   margin-right: 15px;
 }
 
