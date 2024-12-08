@@ -59,7 +59,7 @@ header {
 
 header.home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url(Assets/hero.jpg);
+    url(Assets/hero.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
